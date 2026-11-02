@@ -208,7 +208,7 @@ img {
     font-weight: 500;
 }
 
-.hero-copy > p {
+.hero-copy>p {
     max-width: 460px;
     margin: 0;
     color: var(--muted);
@@ -991,7 +991,7 @@ img {
         font-size: 3.25rem;
     }
 
-    .hero-copy > p {
+    .hero-copy>p {
         font-size: .92rem;
     }
 
@@ -1070,10 +1070,187 @@ img {
 
 /* Hormati pengaturan pengguna yang mengurangi animasi. */
 @media (prefers-reduced-motion: reduce) {
+
     *,
     *::before,
     *::after {
         scroll-behavior: auto !important;
         transition-duration: .01ms !important;
+    }
+}
+
+/* ==========================================================================
+Halaman Galeri Klien (Client Gate & Client Gallery)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+1. Client Gate / Password Protection Card
+   -------------------------------------------------------------------------- */
+.gate {
+    min-height: 60vh;
+    display: grid;
+    place-items: center;
+    padding: 72px 0;
+}
+
+.gate-card {
+    width: 100%;
+    max-width: 420px;
+    background: #ffffff;
+    border: 1px solid #e3ded3;
+    border-radius: 20px;
+    padding: 36px 32px;
+}
+
+.gate-card h1 {
+    margin: 0 0 8px;
+    font-family: "Playfair Display", serif;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.gate-card p {
+    margin: 0 0 24px;
+    color: #6b655b;
+}
+
+.gate-card button[type="submit"] {
+    width: 100%;
+    min-height: 48px;
+    padding: 0 28px;
+    border: 0;
+    border-radius: 999px;
+    background: #1f1b16;
+    color: #f7f5f0;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* --------------------------------------------------------------------------
+2. Form Field & Feedback Messages
+   -------------------------------------------------------------------------- */
+.field {
+    display: grid;
+    gap: 6px;
+    margin-bottom: 16px;
+}
+
+.field label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.field input {
+    min-height: 48px;
+    padding: 0 16px;
+    border: 1px solid #cfc9bc;
+    border-radius: 12px;
+    background: #ffffff;
+    font: inherit;
+}
+
+.field input:focus {
+    outline: 2px solid #1f1b16;
+    outline-offset: 1px;
+}
+
+.err {
+    min-height: 22px;
+    margin: 12px 0 0 !important;
+    color: #a3321f !important;
+    font-size: 14px;
+}
+
+/* --------------------------------------------------------------------------
+3. Client Gallery Layout & Grid
+   -------------------------------------------------------------------------- */
+.klien-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 16px;
+    flex-wrap: wrap;
+    padding: 56px 0 32px;
+}
+
+.klien-bar h1 {
+    margin: 6px 0 4px;
+}
+
+.klien-bar button {
+    min-height: 48px;
+    padding: 0 28px;
+    border: 1px solid #1f1b16;
+    border-radius: 999px;
+    background: transparent;
+    color: #1f1b16;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.klien-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    padding-bottom: 72px;
+}
+
+.klien-item {
+    position: relative;
+    margin: 0;
+    border-radius: 14px;
+    overflow: hidden;
+    background: #e9e5db;
+}
+
+.klien-item img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+}
+
+.klien-dl {
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+    padding: 8px 14px;
+    border-radius: 999px;
+    background: #f7f5f0;
+    color: #1f1b16;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.hasil {
+    padding: 16px;
+    border: 1px solid #e3ded3;
+    border-radius: 12px;
+    background: #ffffff;
+    font-family: monospace;
+    font-size: 13px;
+    white-space: pre-wrap;
+    word-break: break-all;
+}
+
+/* --------------------------------------------------------------------------
+4. Responsive Breakpoints
+   -------------------------------------------------------------------------- */
+@media (max-width: 900px) {
+    .klien-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 520px) {
+    .klien-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gate-card {
+        padding: 28px 22px;
     }
 }

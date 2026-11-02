@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <!-- Informasi halaman, font, stylesheet, dan JavaScript bersama. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f7f5f0">
+    <meta name="description" content="Galeri online pribadi untuk klien Ruang Cerita.">
+    <title>Galeri Klien — Ruang Cerita</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Playfair+Display:wght@500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="galeri.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Navbar: tautan lintas halaman dan menu responsif. -->
+    <header class="site-header">
+        <nav class="container nav-wrap" aria-label="Navigasi utama">
+            <a class="brand" href="index.html" aria-label="Ruang Cerita, beranda">
+                <span class="brand-mark" aria-hidden="true">r.</span>
+                <span>ruang<span>cerita</span></span>
+            </a>
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-label="Buka menu"
+                aria-expanded="false"
+                aria-controls="primary-menu"
+            >☰</button>
+            <ul class="nav-links" id="primary-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="layanan.html">Layanan</a></li>
+                <li><a href="portofolio.html">Portofolio</a></li>
+                <li><a href="paket.html">Paket</a></li>
+                <li><a href="tentang.html">Tentang kami</a></li>
+                <li><a href="galeri.html" aria-current="page">Galeri klien</a></li>
+                <li>
+                    <a class="nav-contact" href="#contact">
+                        Hubungi kami <span class="arrow" aria-hidden="true">↗</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+ 
+    <main>
+        <!-- Form masuk klien -->
+        <section class="gate container" id="gate">
+            <form class="gate-card" id="login-form" autocomplete="off">
+                <span class="eyebrow">Galeri klien</span>
+                <h1>Lihat hasil fotomu.</h1>
+                <p>Masukkan kode dan password yang kami kirim lewat chat.</p>
+                <div class="field">
+                    <label for="kode">Kode klien</label>
+                    <input id="kode" name="kode" type="text" required autocapitalize="none" spellcheck="false">
+                </div>
+                <div class="field">
+                    <label for="pw">Password</label>
+                    <input id="pw" name="pw" type="password" required autocomplete="current-password">
+                </div>
+                <button type="submit">Masuk</button>
+                <p class="err" id="login-error" role="alert"></p>
+            </form>
+        </section>
+    </main>
+ 
+    <!-- Footer: tautan ke halaman lain dan informasi kontak. -->
+    <footer class="site-footer" id="contact">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a class="brand" href="index.html">
+                        <span class="brand-mark" aria-hidden="true">r.</span>
+                        <span>ruang<span>cerita</span></span>
+                    </a>
+                    <p>
+                        Foto dan video yang mengubah momen menjadi cerita yang ingin
+                        kamu simpan selamanya.
+                    </p>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-col">
+                        <h2>Jelajahi</h2>
+                        <a href="layanan.html">Layanan</a>
+                        <a href="portofolio.html">Portofolio</a>
+                        <a href="paket.html">Paket</a>
+                        <a href="tentang.html">Tentang kami</a>
+                        <a href="galeri.html">Galeri klien</a>
+                    </div>
+                    <div class="footer-col">
+                        <h2>Kontak</h2>
+                        <a href="mailto:halo@ruangcerita.id">halo@ruangcerita.id</a>
+                        <a href="https://instagram.com/" target="_blank" rel="noreferrer">Instagram ↗</a>
+                        <p>Yogyakarta, Indonesia</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2025 Ruang Cerita. Dibuat dengan sepenuh hati.</span>
+                <span>Semua cerita punya tempat di sini ♡</span>
+            </div>
+        </div>
+    </footer>
+    <script src="galeri-data.js"></script>
+    <script src="galeri.js"></script>
+</body>
+</html>
