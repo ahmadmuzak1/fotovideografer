@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <!-- Informasi halaman, font, stylesheet, dan JavaScript bersama. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f7f5f0">
+    <meta name="description" content="Jelajahi layanan fotografi dan videografi Ruang Cerita untuk pernikahan, keluarga, brand, dan acara.">
+    <title>Layanan — Ruang Cerita</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Playfair+Display:wght@500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Navbar: navigasi lintas halaman dan tombol menu untuk layar kecil. -->
+    <header class="site-header">
+        <nav class="container nav-wrap" aria-label="Navigasi utama">
+            <a class="brand" href="index.html" aria-label="Ruang Cerita, beranda">
+                <span class="brand-mark" aria-hidden="true">r.</span>
+                <span>ruang<span>cerita</span></span>
+            </a>
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-label="Buka menu"
+                aria-expanded="false"
+                aria-controls="primary-menu"
+            >☰</button>
+            <ul class="nav-links" id="primary-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="layanan.html" aria-current="page">Layanan</a></li>
+                <li><a href="portofolio.html">Portofolio</a></li>
+                <li><a href="paket.html">Paket</a></li>
+                <li><a href="tentang.html">Tentang kami</a></li>
+                <li>
+                    <a class="nav-contact" href="#contact">
+                        Hubungi kami <span class="arrow" aria-hidden="true">↗</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Daftar jasa utama yang ditawarkan oleh tim. -->
+        <section class="services">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <span class="eyebrow">Apa yang kami lakukan</span>
+                        <h1 class="section-title">Cerita dalam berbagai bentuk.</h1>
+                        <p class="section-intro">
+                            Setiap momen punya caranya sendiri untuk dikenang.
+                            Kami siap membantu menemukan cara terbaik untuk ceritamu.
+                        </p>
+                    </div>
+                    <a class="button button--outline" href="#contact">
+                        Diskusi dengan kami <span class="arrow" aria-hidden="true">↗</span>
+                    </a>
+                </div>
+                <div class="services-grid">
+                    <article class="service-card">
+                        <div class="service-icon" aria-hidden="true">♡</div>
+                        <h2>Wedding &amp; Engagement</h2>
+                        <p>
+                            Dari janji sederhana hingga pesta penuh tawa, kami menangkap
+                            momen-momen yang membuat harimu terasa istimewa.
+                        </p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon" aria-hidden="true">⌂</div>
+                        <h2>Moment &amp; Wisuda</h2>
+                        <p>
+                            Potret keluarga yang hangat dan apa adanya, untuk menyimpan
+                            bab-bab kecil yang tumbuh begitu cepat.
+                        </p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon" aria-hidden="true">✳</div>
+                        <h2>Brand &amp; Event</h2>
+                        <p>
+                            Foto dan video yang bercerita tentang brand, karya, dan acara
+                            spesialmu dengan karakter yang kuat.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Penjelasan singkat tentang alur kerja jasa. -->
+        <section class="container about">
+            <div class="about-copy">
+                <span class="eyebrow">Cara kerja kami</span>
+                <h2 class="section-title">Nyaman dari awal sampai akhir.</h2>
+                <p>
+                    Kami mulai dengan mendengarkan ceritamu, lalu merancang sesi yang
+                    terasa natural. Saat hari H, tim kami bekerja dengan tenang agar
+                    kamu bisa menikmati momen, bukan sibuk berpose.
+                </p>
+                <p>
+                    Setelah sesi selesai, setiap foto dipilih dan diedit dengan cermat
+                    sebelum dikirim melalui galeri online pribadi.
+                </p>
+                <a class="button" href="paket.html">
+                    Lihat pilihan paket <span class="arrow" aria-hidden="true">↗</span>
+                </a>
+            </div>
+            <div class="about-photo">
+                <img
+                    src="asset/wisuda-gokil.jpeg"
+                    alt="Fotografer mengabadikan momen pasangan"
+                    loading="lazy"
+                >
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer bersama untuk tautan halaman dan informasi kontak. -->
+    <footer class="site-footer" id="contact">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a class="brand" href="index.html">
+                        <span class="brand-mark" aria-hidden="true">r.</span>
+                        <span>ruang<span>cerita</span></span>
+                    </a>
+                    <p>
+                        Foto dan video yang mengubah momen menjadi cerita yang ingin
+                        kamu simpan selamanya.
+                    </p>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-col">
+                        <h2>Jelajahi</h2>
+                        <a href="layanan.html">Layanan</a>
+                        <a href="portofolio.html">Portofolio</a>
+                        <a href="paket.html">Paket</a>
+                        <a href="tentang.html">Tentang kami</a>
+                    </div>
+                    <div class="footer-col">
+                        <h2>Kontak</h2>
+                        <a href="mailto:halo@ruangcerita.id">halo@ruangcerita.id</a>
+                        <a href="https://instagram.com/" target="_blank" rel="noreferrer">Instagram ↗</a>
+                        <p>Yogyakarta, Indonesia</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2025 Ruang Cerita. Dibuat dengan sepenuh hati.</span>
+                <span>Semua cerita punya tempat di sini ♡</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
